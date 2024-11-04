@@ -1,0 +1,11 @@
+@mixin media-sm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin flex($display, $direction, $justify, $gap) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  gap: $gap;
+}

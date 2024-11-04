@@ -1,0 +1,127 @@
+@use "./index" as *;
+@include media-sm {
+  header {
+    p {
+      display: none;
+    }
+    img {
+      width: 2.5rem;
+    }
+  }
+  .first-main {
+    width: 85%;
+
+    h1 {
+      width: 95%;
+      font-size: 4.5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .video-one {
+    video {
+      width: 725px;
+    }
+  }
+
+  // ================
+
+  // first-section
+
+  // ================
+
+  .second-content {
+    width: 90%;
+  }
+
+  // ================
+
+  // second-section
+
+  // ================
+
+  .third-main {
+    width: 75%;
+  }
+  // ================
+
+  // third-section
+
+  // ================
+  .sub-content-third {
+    background-color: #f5f5f5;
+  }
+  // ================
+
+  // fourth-section
+
+  // ================
+
+  .fourth-img {
+    @include flex(flex, row, null, null);
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .sub-fourth {
+    width: 50%;
+
+    .eight-btn {
+      @include flex(flex, row, flex-start, 15px);
+    }
+
+    .perfil-img {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: gainsboro;
+    }
+  }
+
+  .sixth-section {
+    @include flex(flex, row, center, null);
+    width: 100%;
+    flex-wrap: wrap;
+
+    input {
+      font-size: 1rem;
+    }
+    .last-button {
+      font-size: 1.3rem;
+    }
+
+    .change {
+      width: 40%;
+    }
+
+    .content-sixth {
+      @include flex(flex, column, null, 20px);
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    .first-p-section-sixth {
+      @include flex(flex, row, center, 20px);
+      font-weight: 900;
+      font-size: 1.5rem;
+    }
+
+    .sub-content-sixth {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .sub-content-sixth :nth-child(1) {
+      font-weight: 900;
+      padding: 0;
+      font-size: 1.6rem;
+    }
+
+    .logo-bottom {
+      padding: 50px 0 100px;
+      img {
+        width: 250px;
+      }
+    }
+  }
+}
